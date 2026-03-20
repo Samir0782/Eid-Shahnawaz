@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eid Mubarak 🌙</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="instruction-overlay">
+        <div class="overlay-content">
+            <p>Move your finger across the screen<br>to find the moon...</p>
+        </div>
+    </div>
+
+    <div id="phase1" class="phase active">
+        <div id="search-area">
+            <div class="text-wrapper">
+                <h2 id="hint-text">Search the sky for the moon...</h2>
+            </div>
+            <div id="reveal-circle"></div>
+            <img src="8P.jpg" id="meme-discovery">
+            <div class="moon-container" id="moon">
+                <div class="crescent-moon"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="phase2" class="phase">
+        <div class="video-container">
+            <video id="eid-video" playsinline>
+                <source src="eid-greeting.mp4" type="video/mp4">
+            </video>
+            <button id="next-btn" onclick="goToPhase3()">Continue ✨</button>
+        </div>
+    </div>
+
+    <div id="phase3" class="phase">
+        <div class="twinkle-stars"></div>
+        
+        <div class="glass-card">
+            <h1>Eid Mubarak</h1>
+            <p>May your heart be filled with peace, your soul with grace, and your life with the countless blessings of Allah. ✨</p>
+            <h3 class="signature">- Shaikh Samir </h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
